@@ -1,4 +1,4 @@
-//ZEROS AND ONES (1)        P12828
+// ZEROS AND ONES (1)        P12828
 #include <iostream>
 #include <vector>
 
@@ -12,7 +12,6 @@ std::ostream& operator<<(std::ostream& _cout, const std::vector<int>& out)
     return _cout;
 }
 
-/*escriu cadenas de mina n de 0s i 1s*/
 void exh_zerones(std::vector<int>& used, int level)
 {
     if (level == int(used.size())) 
@@ -32,5 +31,5 @@ int main(int, char**)
     std::cin >> user_input;
     used = std::vector<int> (user_input);
     exh_zerones(used, 0);
-    return EXIT_SUCCESS;
+    return 0;
 }
