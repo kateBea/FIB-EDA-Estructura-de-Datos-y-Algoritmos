@@ -4,11 +4,9 @@
 #include <vector>
 #include <list>
 
-/*some definitions*/
 typedef std::vector<std::string>    word_list;
 typedef std::vector<bool>           used_word;
 
-/*std::cout for std::list<std::string>*/
 std::ostream& operator<<(std::ostream& _cout, const std::vector<std::string>& out)
 {   
     std::cout << '(';
@@ -21,7 +19,6 @@ std::ostream& operator<<(std::ostream& _cout, const std::vector<std::string>& ou
     return _cout;   
 }
 
-/*all permutations of words inside _words*/
 void word_perm(const word_list& _words, used_word& used, std::vector<std::string>& out, int level)
 {
     if (level == int (_words.size())) std::cout << out << std::endl;
