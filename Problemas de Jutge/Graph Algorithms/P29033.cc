@@ -46,6 +46,5 @@ int main() {
 		if (dos_color(g)) cout << "yes" << endl;
 		else cout << "no" << endl;
 		
-		//cout << (dos_color(g) ? "yes" : "no") << endl;
 	}
 }
